@@ -16,8 +16,8 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
-function touchStarted() {
-  fill(255);
+function touchMoved() {
+  fill(0);
   ellipse(touchX, touchY, 50, 50);
   // prevent default
   return false;
