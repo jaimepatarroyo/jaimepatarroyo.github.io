@@ -17,7 +17,7 @@ function windowResized() {
 }
 
 function touchStarted() {
-  fill(0);
+  fill(255);
   ellipse(touchX, touchY, 50, 50);
   // prevent default
   return false;
