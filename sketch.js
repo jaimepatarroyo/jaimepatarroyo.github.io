@@ -11,8 +11,14 @@ function draw() {
     fill(255);
   }
   ellipse(mouseX,mouseY,50,50);
+  ellipse(touchX,touchY,50,50);
 }
 
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+}
+
+function touchMoved() {
+  // do some stuff
+  return false;
 }
