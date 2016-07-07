@@ -1,15 +1,11 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  noStroke();
 }
 
 function draw() {
-  noStroke();
-  if (mouseIsPressed) {
-    fill(0);
-  } else {
-    fill(255);
-  }
-  ellipse(mouseX,mouseY,50,50);
+
+  
 }
 
 function windowResized() {
@@ -19,6 +15,13 @@ function windowResized() {
 function touchMoved() {
   fill(0);
   ellipse(touchX, touchY, 50, 50);
+  // prevent default
+  return false;
+}
+
+function mousePressed() {
+  fill(0);
+  ellipse(mouseX, mouseY, 50, 50);
   // prevent default
   return false;
 }
